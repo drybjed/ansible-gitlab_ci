@@ -59,7 +59,7 @@ galaxy_info:
 meta_info:
   github_url: "https://github.com/debops/ansible-gitlab_ci"
   git_branch: "master"
-  galaxy_id: ""
+  galaxy_id: "1567"
 
   travis: False
 
