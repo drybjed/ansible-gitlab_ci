@@ -1,6 +1,6 @@
 ## gitlab_ci
 
-[![Travis CI](https://secure.travis-ci.org/debops/ansible-gitlab_ci.png)](http://travis-ci.org/debops/ansible-gitlab_ci) [![test-suite](http://img.shields.io/badge/test--suite-ansible--gitlab__ci-blue.svg)](https://github.com/debops/test-suite/tree/master/ansible-gitlab_ci/) [![Ansible Galaxy](http://img.shields.io/badge/galaxy-debops.gitlab__ci-660198.svg)](https://galaxy.ansible.com/list#/roles/1567)[![Platforms](http://img.shields.io/badge/platforms-debian%20|%20ubuntu-lightgrey.svg)](#)
+[![Travis CI](https://secure.travis-ci.org/debops/ansible-gitlab_ci.png)](http://travis-ci.org/debops/ansible-gitlab_ci) [![test-suite](http://img.shields.io/badge/test--suite-ansible--gitlab__ci-blue.svg)](https://github.com/debops/test-suite/tree/master/ansible-gitlab_ci/) [![Ansible Galaxy](http://img.shields.io/badge/galaxy-debops.gitlab__ci-660198.svg)](https://galaxy.ansible.com/list#/roles/1567) [![Platforms](http://img.shields.io/badge/platforms-debian%20|%20ubuntu-lightgrey.svg)](#)
 
 [GitLab CI](https://about.gitlab.com/gitlab-ci/) is a continuous
 integration service based around [GitLab](https://about.gitlab.com/). It
