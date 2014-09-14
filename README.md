@@ -1,6 +1,14 @@
-## gitlab_ci
 
-[![Travis CI](https://secure.travis-ci.org/debops/ansible-gitlab_ci.png)](http://travis-ci.org/debops/ansible-gitlab_ci) [![test-suite](http://img.shields.io/badge/test--suite-ansible--gitlab__ci-blue.svg)](https://github.com/debops/test-suite/tree/master/ansible-gitlab_ci/) [![Ansible Galaxy](http://img.shields.io/badge/galaxy-debops.gitlab__ci-660198.svg)](https://galaxy.ansible.com/list#/roles/1567) [![Platforms](http://img.shields.io/badge/platforms-debian%20|%20ubuntu-lightgrey.svg)](#)
+## [![DebOps project](http://debops.org/images/debops-small.png)](http://debops.org) gitlab_ci
+
+
+
+[![Travis CI](http://img.shields.io/travis/debops/ansible-gitlab_ci.svg?style=flat)](http://travis-ci.org/debops/ansible-gitlab_ci) [![test-suite](http://img.shields.io/badge/test--suite-ansible--gitlab__ci-blue.svg?style=flat)](https://github.com/debops/test-suite/tree/master/ansible-gitlab_ci/)  [![Ansible Galaxy](http://img.shields.io/badge/galaxy-debops.gitlab__ci-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/1567) [![Platforms](http://img.shields.io/badge/platforms-debian%20|%20ubuntu-lightgrey.svg?style=flat)](#)
+
+
+
+
+
 
 [GitLab CI](https://about.gitlab.com/gitlab-ci/) is a continuous
 integration service based around [GitLab](https://about.gitlab.com/). It
@@ -10,11 +18,24 @@ Runner](https://github.com/gitlabhq/gitlab-ci-runner) service to run the
 tests (can be installed using `debops.gitlab_ci_runner` role).
 
 
+
+
+
 ### Installation
 
 This role requires at least Ansible `v1.7.0`. To install it, run:
 
     ansible-galaxy install debops.gitlab_ci
+
+#### Are you using this as a standalone role without DebOps?
+
+You may need to include missing roles from the [DebOps common
+playbook](https://github.com/debops/debops-playbooks/blob/master/playbooks/common.yml)
+into your playbook.
+
+[Try DebOps now](https://github.com/debops/debops) for a complete solution to run your Debian-based infrastructure.
+
+
 
 
 
@@ -27,6 +48,8 @@ This role requires at least Ansible `v1.7.0`. To install it, run:
 - `debops.mysql`
 - `debops.postgresql`
 - `debops.nginx`
+
+
 
 
 
@@ -99,13 +122,19 @@ List of internal variables used by the role:
     gitlab_ci_status_upgrade
 
 
+
+
+
+
 ### Authors and license
 
 `gitlab_ci` role was written by:
 
 - Maciej Delmanowski | [e-mail](mailto:drybjed@gmail.com) | [Twitter](https://twitter.com/drybjed) | [GitHub](https://github.com/drybjed)
 
-License: [GPLv3](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3))
+License: [GPLv3](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
+
+
 
 ***
 
