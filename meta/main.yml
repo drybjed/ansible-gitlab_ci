@@ -73,10 +73,13 @@ ansigenome_info:
       github: 'drybjed'
 
   synopsis: |
-    [GitLab CI](https://about.gitlab.com/gitlab-ci/) is a continuous
-    integration service based around [GitLab](https://about.gitlab.com/). It
+    `GitLab CI`_ is a continuous integration service based around `GitLab`_. It
     uses a GitLab instance for authentication and access to git repositories
-    (can be managed using `debops.gitlab` role) and [GitLab CI
-    Runner](https://github.com/gitlabhq/gitlab-ci-runner) service to run the
-    tests (can be installed using `debops.gitlab_ci_runner` role).
+    (can be managed using ``debops.gitlab`` role) and `GitLab CI Runner`_
+    service to run the tests (can be installed using
+    ``debops.gitlab_ci_runner`` role).
+    
+    .. GitLab CI: https://about.gitlab.com/gitlab-ci/
+    .. GitLab: https://about.gitlab.com/
+    .. GitLab CI Runner: https://github.com/gitlabhq/gitlab-ci-runner/
 
