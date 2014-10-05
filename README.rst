@@ -23,9 +23,9 @@ uses a GitLab instance for authentication and access to git repositories
 service to run the tests (can be installed using
 ``debops.gitlab_ci_runner`` role).
 
-.. GitLab CI: https://about.gitlab.com/gitlab-ci/
-.. GitLab: https://about.gitlab.com/
-.. GitLab CI Runner: https://github.com/gitlabhq/gitlab-ci-runner/
+.. _GitLab CI: https://about.gitlab.com/gitlab-ci/
+.. _GitLab: https://about.gitlab.com/
+.. _GitLab CI Runner: https://github.com/gitlabhq/gitlab-ci-runner/
 
 Installation
 ~~~~~~~~~~~~
@@ -51,7 +51,14 @@ into your playbook.
 Role dependencies
 ~~~~~~~~~~~~~~~~~
 
-- ``debops.etc_services``- ``debops.redis``- ``debops.nginx``- ``debops.mysql``- ``debops.ruby``- ``debops.secret``- ``debops.postgresql``
+- ``debops.etc_services``
+- ``debops.redis``
+- ``debops.nginx``
+- ``debops.mysql``
+- ``debops.ruby``
+- ``debops.secret``
+- ``debops.postgresql``
+
 
 Role variables
 ~~~~~~~~~~~~~~
