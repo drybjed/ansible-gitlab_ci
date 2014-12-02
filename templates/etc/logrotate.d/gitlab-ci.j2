@@ -3,7 +3,7 @@
 # GitLab CI logrotate settings
 # based on: http://stackoverflow.com/a/4883967
 
-{{ gitlab_ci_home }}/gitlab-ci/log/*.log {
+{{ gitlab_ci_git_checkout }}/log/*.log {
     daily
     missingok
     rotate 90

@@ -5,6 +5,11 @@ dependencies:
   - role: debops.secret
 
   - role: debops.etc_services
+    etc_services_dependent_list:
+
+      - name: '{{ gitlab_ci_user }}'
+        port: '{{ gitlab_ci_unicorn_port }}'
+        comment: 'GitLab CI'
 
   - role: debops.ruby
 
