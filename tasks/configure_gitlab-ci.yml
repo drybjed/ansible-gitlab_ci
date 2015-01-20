@@ -145,7 +145,9 @@
   when: gitlab_ci_register_checkout is defined and gitlab_ci_register_checkout.changed
 
 - name: Enable GitLab CI service
-  shell: insserv gitlab-ci
+  service:
+    name: 'gitlab-ci'
+    enabled: True
   when: gitlab_ci_register_checkout is defined and gitlab_ci_register_checkout.changed
 
 - name: Setup GitLab CI logrotate configuration
