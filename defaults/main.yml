@@ -68,3 +68,9 @@ gitlab_ci_home: '/var/local/{{ gitlab_ci_user }}'
 # Unicorn port on localhost interface for GitLab CI
 gitlab_ci_unicorn_port: '18083'
 
+
+# ---- Compatibility workarounds ----
+
+# Enable or disable ACL configuration for the webserver
+gitlab_ci_support_filesystem_acl: True
+
