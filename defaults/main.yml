@@ -6,17 +6,25 @@
 gitlab_ci_dependencies: True
 
 # What version of GitLab CI to install / manage
-gitlab_ci_version: '5.2'
+gitlab_ci_version: '5.4'
+
+
+# ---- GitLab integration ----
+
+# URL of GitLab instance
+gitlab_ci_gitlab_server: 'https://code.{{ ansible_domain }}/'
+
+# GitLab app id configured in GitLab OAuth
+gitlab_ci_gitlab_app_id: '{{ lookup("password", secret + "/credentials/" + ansible_fqdn + "/gitlab_ci/gitlab_app_id length=0") }}'
+
+# GitLab app secret configured in GitLab OAuth
+gitlab_ci_gitlab_app_secret: '{{ lookup("password", secret + "/credentials/" + ansible_fqdn + "/gitlab_ci/gitlab_app_secret length=0") }}'
 
 
 # ---- GitLab CI instance configuration ----
 
 # What database to use for GitLab CI instnce? Choices: mysql, postgresql
 gitlab_ci_database: 'mysql'
-
-# List of GitLab instances to include in login form
-gitlab_ci_urls:
-  - 'https://code.{{ ansible_domain }}'
 
 # Domain which will be used for nginx server
 # GitLab CI will be configured with HTTPS enabled by default
@@ -59,4 +67,10 @@ gitlab_ci_home: '/var/local/{{ gitlab_ci_user }}'
 
 # Unicorn port on localhost interface for GitLab CI
 gitlab_ci_unicorn_port: '18083'
+
+
+# ---- Compatibility workarounds ----
+
+# Enable or disable ACL configuration for the webserver
+gitlab_ci_support_filesystem_acl: True
 

@@ -17,6 +17,8 @@ gitlab_ci_git_checkout: '{{ gitlab_ci_home + "/gitlab-ci" }}'
 gitlab_ci_version_map:
   '5.1': '5-1-stable'
   '5.2': '5-2-stable'
+  '5.3': '5-3-stable'
+  '5.4': '5-4-stable'
 
 
 # ---- GitLab CI installation ----
